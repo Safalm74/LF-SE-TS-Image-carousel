@@ -7,7 +7,7 @@ function stylings(){
 
     */ 
     const totalImage: number= constants.containers.length;
-    const image_gaps: number=5;
+    const image_gaps: number=3;
     const imageContainer= Array.from(constants.containers);
     const image= Array.from(constants.image);
    

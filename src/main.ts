@@ -1,29 +1,13 @@
-import constants from './constant';
 import stylings from './stylings';
-import { nextImg,prevImg} from './changeImg';
 import { initateLowerNavigator } from './updateLowerNavigator';
+import runEventListeners from './eventListeners';
+import { animationLoop } from './changeImg';
 
 //implementing necessary stylings
 stylings();
+//initiating lower navigations
 initateLowerNavigator();
-window.addEventListener(
-  'keypress',
-  (e: KeyboardEvent)=>{
-    if(e.key.toLowerCase()==='d'){
-      nextImg();
-    } 
-    if(e.key.toLowerCase()==='a'){
-      prevImg();
-    }
-  }
-);
-constants.leftBtn?.addEventListener(
-  'click',
-  ()=>{
-    prevImg();
-  });
-constants.rightBtn?.addEventListener(
-  'click',
-  ()=>{
-    nextImg();
-  });
+//adding Event listeners
+runEventListeners();
+//animation loop
+animationLoop();

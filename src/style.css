@@ -45,7 +45,7 @@ body {
 .lower-navigator{
   position: absolute;
   background:radial-gradient(rgba(200,200,200,0.8),transparent);
-  bottom: 0;
+  bottom: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;

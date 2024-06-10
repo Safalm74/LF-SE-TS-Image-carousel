@@ -14,6 +14,7 @@ type Constants={
     lowerNavigatorHeight:number;
     lowerNavigator:HTMLElement | null;
     lowerNavigatorCircleSize:number;
+    animationEnd:boolean;
 }
 const widthPercent:number=0.3;
 const navigatorCircleSize:number=0.005;
@@ -33,7 +34,8 @@ const constants: Constants={
     rightBtn:document.getElementById('right-btn'),
     lowerNavigatorHeight:0.2,
     lowerNavigator:document.getElementById("lower-navigator"),
-    lowerNavigatorCircleSize:window.innerWidth*navigatorCircleSize
+    lowerNavigatorCircleSize:window.innerWidth*navigatorCircleSize,
+    animationEnd:true
 };
 
 
