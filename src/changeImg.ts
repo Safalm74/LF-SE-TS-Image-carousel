@@ -67,4 +67,4 @@ function animationLoop():void{
         2000
     );
 }
-export {nextImg,prevImg,Interval,changeImgAnimation,animationLoop};
+export {nextImg,prevImg,Interval,changeImgAnimation,animationLoop,MainLoop};
